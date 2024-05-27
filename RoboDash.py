@@ -203,7 +203,7 @@ def get_asset_allocation(riskTolerance,stock_ticker):
     return_vec = np.array(assets_selected.pct_change().dropna(axis=0)).T
     n = len(return_vec)
     returns = np.asmatrix(return_vec)
-    mus = 1-int(riskTolerance)
+    mus = 1-float(riskTolerance)
     
     # Convert to cvxopt matrices
     S = opt.matrix(np.cov(return_vec))
