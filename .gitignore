@@ -1,3 +1,4 @@
 .env.gpg
 *.csv
+*.xlsx
 catboost_info/
