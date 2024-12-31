@@ -1,4 +1,5 @@
 .env.gpg
 *.csv
 *.xlsx
+*.keras
 catboost_info/
